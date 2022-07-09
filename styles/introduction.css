@@ -1,0 +1,25 @@
+.introduction {
+    background-color: var(--color-gray);
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    height: 250px;
+}
+
+.introduction__title {
+    width: 350px;
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-title);
+    font-size: var(--font-size-title);
+    margin-bottom: 20px;
+}
+
+.introduction__text {
+    text-align: center;
+    width: 450px;
+    font-size: var(--font-size-text);
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight-text);
+}
+
