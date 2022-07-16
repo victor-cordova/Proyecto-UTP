@@ -1,5 +1,5 @@
 .trainings {
-    height: 470px;
+    height: 100vh;
     display: grid;
     justify-items: center;
     align-content: space-around;
@@ -27,14 +27,9 @@
 }
 
 @media screen and (min-width: 400px)and (max-width: 700px) {
-    .trainings {
-        height: 400px;
-    }
-
     .trainings__video {
         width: 350px;
         height: 200px;
-        /* border: 0; */
     }
 
     .trainings__title {
@@ -48,14 +43,10 @@
 }
 
 @media screen and (max-width: 400px) {
-    .trainings {
-        height: 400px;
-    }
 
     .trainings__video {
         width: 300px;
         height: 170px;
-        /* border: 0; */
     }
 
     .trainings__text {

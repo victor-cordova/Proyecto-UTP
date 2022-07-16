@@ -1,0 +1,43 @@
+.scroll-smoth {
+    position: fixed;
+    top: 10px;
+    display: grid;
+    background-color: brown;
+    width: 550px;
+    height: 40px;
+    font-size: var(--font-size-text);
+    grid-template-columns: repeat(5, 1fr);
+    z-index: 2;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+
+    backdrop-filter: blur(18px) saturate(168%);
+    -webkit-backdrop-filter: blur(18px) saturate(168%);
+    background-color: rgba(163, 194, 172, 0.57);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.scroll-smoth__link {
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    .scroll-smoth {
+        top: 10px;
+        width: 350px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .scroll-smoth {
+        width: 320px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+}

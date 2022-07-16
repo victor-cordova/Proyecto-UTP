@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./styles/promo.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/trainings.css">
+    <link rel="stylesheet" href="./styles/scroll-smoth.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,208 +92,219 @@
         </form>
     </header>
 
-    <main class="presentation">
-        <div 
-            class="presentation__image"
-        >
-        </div>
-        <div class="presentation__container">
-            <h2 class="presentation__title">SUPLEMENTOS NATURALES</h2>
-            <h3 class="presentation__subtitle">#VIVENATURAL!</h3>
-            <p class="presentation__text">Nuestros productos ofrecen todas las vitaminas y la fuerza de la naturaleza que necesitas para superarte cada días.</p>
-        </div>
-    </main>
+    <nav class="scroll-smoth">
+        <a href="#page-presentation" class="scroll-smoth__link">Presentación</a>
+        <a href="#page-introduction" class="scroll-smoth__link">¿Quiénes somos?</a>
+        <a href="#page-promo" class="scroll-smoth__link">Promociones</a>
+        <a href="#page-content" class="scroll-smoth__link">Contenido</a>
+        <a href="#page-trainings" class="scroll-smoth__link">Capacitationes</a>
+    </nav>
 
-    <section class="introduction">
-        <h2 class="introduction__title">¿QUIÉNES SOMOS?</h2>
-        <p class="introduction__text">Buscamos el desarrollo de cadenas de valor en productos provenientes de la biodiversidad peruana. Además de buscar desarrollar actividades comerciales,también, tenemos planeadas actividades para promover el desarrollo social y ambiental de nuestro país.</p>
-    </section>
-        
-    <section class="promo">
-        <h2 class="promo__title">Promociones</h2>
-        <div class="carousel">
-            <div class="carousel__item" id="carousel__item-promo-1">
-                <a href="#carousel__item-promo-2">
-                    <i class="carousel__arrow fas fa-chevron-left"></i>
-                </a>
-
-                <img 
-                    src="./images/promotion_camu_camu.jpg" 
-                    alt="Image promotion camu camu" 
-                    class="carousel__image"
-                >
-
-                <a href="#carousel__item-promo-2">
-                    <i class="carousel__arrow fas fa-chevron-right"></i>
-                </a>
+    <scroll-container>
+        <scroll-page class="presentation" id="page-presentation">
+            <div 
+                class="presentation__image"
+            >
             </div>
-            <div class="carousel__item" id="carousel__item-promo-2">
-                <a href="#carousel__item-promo-1">
-                    <i class="carousel__arrow fas fa-chevron-left"></i>
-                </a>
-
-                <img 
-                    src="./images/promotion_cosmetic.jpg" 
-                    alt="Image promotion cosmetic" 
-                    class="carousel__image"
-                >
-
-                <a href="#carousel__item-promo-1">
-                    <i class="carousel__arrow fas fa-chevron-right"></i>
-                </a>
+            <div class="presentation__container">
+                <h2 class="presentation__title">SUPLEMENTOS NATURALES</h2>
+                <h3 class="presentation__subtitle">#VIVENATURAL!</h3>
+                <p class="presentation__text">Nuestros productos ofrecen todas las vitaminas y la fuerza de la naturaleza que necesitas para superarte cada días.</p>
             </div>
-        </div>
-
-        <nav class="promo__icons-container">
-            <a href="https://www.facebook.com/amazonandes.export/photos/5191929487593111">
-                <img 
-                    src="https://img.icons8.com/ios-glyphs/40/000000/facebook-new.png"
-                    alt="Icon facebook"
-                />
-            </a>
+        </scroll-page>
+    
+        <scroll-page class="introduction" id="page-introduction">
+            <h2 class="introduction__title">¿QUIÉNES SOMOS?</h2>
+            <p class="introduction__text">Buscamos el desarrollo de cadenas de valor en productos provenientes de la biodiversidad peruana. Además de buscar desarrollar actividades comerciales,también, tenemos planeadas actividades para promover el desarrollo social y ambiental de nuestro país.</p>
+        </scroll-page>
             
-            <a href="https://www.tiktok.com/@amazonandesperu/video/7115137825476971781?is_copy_url=1&is_from_webapp=v1&q=amazonandesperu&t=1657225012195">
-                <img 
-                    src="https://img.icons8.com/ios-glyphs/40/000000/tiktok.png"
-                    alt="Icon tiktok"
-                />
-            </a>
-            <a href="https://www.instagram.com/p/CfqADvcNp-k/">
-                <img 
-                    src="https://img.icons8.com/ios-filled/40/000000/instagram-new--v1.png"
-                    alt="Icon instagram"
-                />
-            </a>
-            
-        </nav>
-    </section>
-
-    <section class="content">
-        <h2 class="content__title">Contenido</h2>
-
-        <div class="content__container-text">
-            <p class="content__text-introduction">Nuestros productos están compuestos de los ingredientes más puros y saludables, con el fin de brindar los nutrientes para cumplir con lo ofrecido en cada producto individualmente.</p>
-            <p class="content__text-list">Contamos con los siguientes productos:</p>
-            <p class="content__text-items">
-                - Hojas de moringa.<br>
-                - Espirulina con noni.<br>
-                - Maca negra gelatinizada.<br>
-                - Camu camu en polvo.<br>
-                - Colágeno hidrolizado.<br>
-                - Entre otros.<br>
-            </p>
-        </div>
-
-        <div class="carousel carousel--content">
-            <div class="carousel__item" id="carousel__item-content-1">
-                <a href="#carousel__item-content-4">
-                    <i class="carousel__arrow fas fa-chevron-left"></i>
+        <scroll-page class="promo" id="page-promo">
+            <h2 class="promo__title">Promociones</h2>
+            <div class="carousel">
+                <div class="carousel__item" id="carousel__item-promo-1">
+                    <a href="#carousel__item-promo-2">
+                        <i class="carousel__arrow fas fa-chevron-left"></i>
+                    </a>
+    
+                    <img 
+                        src="./images/promotion_camu_camu.jpg" 
+                        alt="Image promotion camu camu" 
+                        class="carousel__image"
+                    >
+    
+                    <a href="#carousel__item-promo-2">
+                        <i class="carousel__arrow fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="carousel__item" id="carousel__item-promo-2">
+                    <a href="#carousel__item-promo-1">
+                        <i class="carousel__arrow fas fa-chevron-left"></i>
+                    </a>
+    
+                    <img 
+                        src="./images/promotion_cosmetic.jpg" 
+                        alt="Image promotion cosmetic" 
+                        class="carousel__image"
+                    >
+    
+                    <a href="#carousel__item-promo-1">
+                        <i class="carousel__arrow fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <nav class="promo__icons-container">
+                <a href="https://www.facebook.com/amazonandes.export/photos/5191929487593111">
+                    <img 
+                        src="https://img.icons8.com/ios-glyphs/40/000000/facebook-new.png"
+                        alt="Icon facebook"
+                    />
                 </a>
-
-                <img 
-                    src="./images/content_acai_berry.jpeg" 
-                    alt="Image content acai berry" 
-                    class="carousel__image"
-                >
-
+                
+                <a href="https://www.tiktok.com/@amazonandesperu/video/7115137825476971781?is_copy_url=1&is_from_webapp=v1&q=amazonandesperu&t=1657225012195">
+                    <img 
+                        src="https://img.icons8.com/ios-glyphs/40/000000/tiktok.png"
+                        alt="Icon tiktok"
+                    />
+                </a>
+                <a href="https://www.instagram.com/p/CfqADvcNp-k/">
+                    <img 
+                        src="https://img.icons8.com/ios-filled/40/000000/instagram-new--v1.png"
+                        alt="Icon instagram"
+                    />
+                </a>
+                
+            </nav>
+        </scroll-page>
+    
+        <scroll-page class="content" id="page-content">
+            <h2 class="content__title">Contenido</h2>
+    
+            <div class="content__container-text">
+                <p class="content__text-introduction">Nuestros productos están compuestos de los ingredientes más puros y saludables, con el fin de brindar los nutrientes para cumplir con lo ofrecido en cada producto individualmente.</p>
+                <p class="content__text-list">Contamos con los siguientes productos:</p>
+                <p class="content__text-items">
+                    - Hojas de moringa.<br>
+                    - Espirulina con noni.<br>
+                    - Maca negra gelatinizada.<br>
+                    - Camu camu en polvo.<br>
+                    - Colágeno hidrolizado.<br>
+                    - Entre otros.<br>
+                </p>
+            </div>
+    
+            <div class="carousel carousel--content">
+                <div class="carousel__item" id="carousel__item-content-1">
+                    <a href="#carousel__item-content-4">
+                        <i class="carousel__arrow fas fa-chevron-left"></i>
+                    </a>
+    
+                    <img 
+                        src="./images/content_acai_berry.jpeg" 
+                        alt="Image content acai berry" 
+                        class="carousel__image"
+                    >
+    
+                    <a href="#carousel__item-content-2">
+                        <i class="carousel__arrow fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="carousel__item" id="carousel__item-content-2">
+                    <a href="#carousel__item-content-1">
+                        <i class="carousel__arrow fas fa-chevron-left"></i>
+                    </a>
+    
+                    <img 
+                        src="./images/content_coco.jpeg" 
+                        alt="Image content coco"  
+                        class="carousel__image"
+                    >
+    
+                    <a href="#carousel__item-content-3">
+                        <i class="carousel__arrow fas fa-chevron-right"></i>
+                    </a>
+                </div>    
+                <div class="carousel__item" id="carousel__item-content-3">
+                    <a href="#carousel__item-content-2">
+                        <i class="carousel__arrow fas fa-chevron-left"></i>
+                    </a>
+    
+                    <img 
+                        src="./images/content_drinking_protein.jpeg" 
+                        alt="Image content drinking protein"  
+                        class="carousel__image"
+                    >
+    
+                    <a href="#carousel__item-content-4">
+                        <i class="carousel__arrow fas fa-chevron-right"></i>
+                    </a>
+                </div>    
+                <div class="carousel__item" id="carousel__item-content-4">
+                    <a href="#carousel__item-content-3">
+                        <i class="carousel__arrow fas fa-chevron-left"></i>
+                    </a>
+    
+                    <img 
+                        src="./images/content_protein_vitality.jpeg" 
+                        alt="Image content protein vitality"  
+                        class="carousel__image"
+                    >
+    
+                    <a href="#carousel__item-content-1">
+                        <i class="carousel__arrow fas fa-chevron-right"></i>
+                    </a>
+                </div>    
+            </div>
+    
+            <div class="carousel-controller">
+                <a href="#carousel__item-content-1">
+                    <img 
+                        src="./images/content_acai_berry.jpeg" 
+                        alt="Image content acai berry" 
+                        class="carousel-controller__image"
+                    >
+                </a>
                 <a href="#carousel__item-content-2">
-                    <i class="carousel__arrow fas fa-chevron-right"></i>
+                    <img 
+                        src="./images/content_coco.jpeg" 
+                        alt="Image content coco" 
+                        class="carousel-controller__image"
+                    >
+                </a>
+                <a href="#carousel__item-content-3">
+                    <img 
+                        src="./images/content_drinking_protein.jpeg" 
+                        alt="Image content drinking protein" 
+                        class="carousel-controller__image"
+                    >
+                </a>
+                <a href="#carousel__item-content-4">
+                    <img 
+                        src="./images/content_protein_vitality.jpeg" 
+                        alt="Image content protein vitality" 
+                        class="carousel-controller__image"
+                    >
                 </a>
             </div>
-            <div class="carousel__item" id="carousel__item-content-2">
-                <a href="#carousel__item-content-1">
-                    <i class="carousel__arrow fas fa-chevron-left"></i>
-                </a>
-
-                <img 
-                    src="./images/content_coco.jpeg" 
-                    alt="Image content coco"  
-                    class="carousel__image"
-                >
-
-                <a href="#carousel__item-content-3">
-                    <i class="carousel__arrow fas fa-chevron-right"></i>
-                </a>
-            </div>    
-            <div class="carousel__item" id="carousel__item-content-3">
-                <a href="#carousel__item-content-2">
-                    <i class="carousel__arrow fas fa-chevron-left"></i>
-                </a>
-
-                <img 
-                    src="./images/content_drinking_protein.jpeg" 
-                    alt="Image content drinking protein"  
-                    class="carousel__image"
-                >
-
-                <a href="#carousel__item-content-4">
-                    <i class="carousel__arrow fas fa-chevron-right"></i>
-                </a>
-            </div>    
-            <div class="carousel__item" id="carousel__item-content-4">
-                <a href="#carousel__item-content-3">
-                    <i class="carousel__arrow fas fa-chevron-left"></i>
-                </a>
-
-                <img 
-                    src="./images/content_protein_vitality.jpeg" 
-                    alt="Image content protein vitality"  
-                    class="carousel__image"
-                >
-
-                <a href="#carousel__item-content-1">
-                    <i class="carousel__arrow fas fa-chevron-right"></i>
-                </a>
-            </div>    
-        </div>
-
-        <div class="carousel-controller">
-            <a href="#carousel__item-content-1">
-                <img 
-                    src="./images/content_acai_berry.jpeg" 
-                    alt="Image content acai berry" 
-                    class="carousel-controller__image"
-                >
-            </a>
-            <a href="#carousel__item-content-2">
-                <img 
-                    src="./images/content_coco.jpeg" 
-                    alt="Image content coco" 
-                    class="carousel-controller__image"
-                >
-            </a>
-            <a href="#carousel__item-content-3">
-                <img 
-                    src="./images/content_drinking_protein.jpeg" 
-                    alt="Image content drinking protein" 
-                    class="carousel-controller__image"
-                >
-            </a>
-            <a href="#carousel__item-content-4">
-                <img 
-                    src="./images/content_protein_vitality.jpeg" 
-                    alt="Image content protein vitality" 
-                    class="carousel-controller__image"
-                >
-            </a>
-        </div>
-
-    </section>
-
-    <section class="trainings">
-        <h2 class="trainings__title">Capacitaciones</h2>
-
-        <iframe 
-            class="trainings__video" 
-            src="https://www.youtube.com/embed/gPhGPLggN60" 
-            title="YouTube video player" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-        >
-        </iframe>
-
-        <p class="trainings__text">En esta capacitación se habla sobre las cápsulas de aceite de coco, Energy Green. Estas ayudan a combatir el alzhéimer, mejorar la apariencia de la piel y el cabello, entre otros aspectos muy beneficiosos para el usuario.</p>
-    </section>
+    
+        </scroll-page>
+    
+        <scroll-page class="trainings" id="page-trainings">
+            <h2 class="trainings__title">Capacitaciones</h2>
+    
+            <iframe 
+                class="trainings__video" 
+                src="https://www.youtube.com/embed/gPhGPLggN60" 
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+            >
+            </iframe>
+    
+            <p class="trainings__text">En esta capacitación se habla sobre las cápsulas de aceite de coco, Energy Green. Estas ayudan a combatir el alzhéimer, mejorar la apariencia de la piel y el cabello, entre otros aspectos muy beneficiosos para el usuario.</p>
+        </scroll-page>
+    </scroll-container>
+    
 
     <footer class="footer">
         <h2 class="footer__title">Información de contacto</h2>

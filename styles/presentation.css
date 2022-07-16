@@ -69,17 +69,3 @@
         font-size: var(--font-size-title-mobile);
     }
 }
-
-/* @media screen and (max-width: 400px) {
-    .presentation {
-        justify-content: center;
-    }
-
-    .presentation__image {
-        display: none;
-    }
-
-    .presentation__container {
-        grid-column: 1 / 3;
-    }
-} */

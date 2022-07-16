@@ -1,6 +1,6 @@
 .promo{
     width: 100%;
-    /* height: 390px; */
+    height: 100vh;
     background-color: var(--color-green);
     display: grid;
     grid-template-rows: 0.2fr 1fr 0.2fr;
