@@ -2,7 +2,7 @@
     background-color: var(--color-header);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: 90px;
+    grid-template-rows: 120px;
     justify-items: center;
     align-items: center;
 }
@@ -27,8 +27,8 @@
     background-size: 100%;
     object-fit: contain;
     border: none;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     display: block;
 }
 
@@ -106,9 +106,10 @@
 
     .item-check__checker--sandwich:checked + .menu__container {
         display: grid;
-        justify-items: left; 
+        justify-items: center; 
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
+        width: 80px;
     }
 
     .item-check__checker--searcher:checked + .searcher__input {
@@ -117,4 +118,9 @@
     .searcher__input {
         display: none;
     }
+
+    /* .item-check__icon {
+        width: 20px;
+        height: 20px;
+    } */
 }
