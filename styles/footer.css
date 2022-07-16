@@ -33,6 +33,13 @@
 
 @media screen and (max-width: 700px) {
 
+    .footer__title {
+        /* grid-column: 1 / 4;
+        font-family: var(--font-family-title);
+        font-weight: var(--font-weight-title); */
+        font-size: var(--font-size-title-mobile);
+    }
+
     .item-check__checker--skype:checked + .footer__text {
         display: grid;
     }
@@ -47,6 +54,7 @@
 
     .footer__text {
         display: none;
+        font-size: var(--font-size-text-mobile);
     }
 
     .footer__info {
@@ -56,5 +64,11 @@
 
     .footer__icons {
         margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer__title {
+        font-size: 2rem;
     }
 }

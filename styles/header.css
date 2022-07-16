@@ -92,6 +92,14 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .menu__item {
+        /* color: #fff;
+        text-decoration: none;    */
+        font-size: var(--font-size-text-mobile);
+        /* font-family: var(--font-family-text);
+        font-weight: var(--font-weight-text); */
+    }
+
     .menu__container {
         display: none;
     }
